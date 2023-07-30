@@ -2,6 +2,20 @@ import React, { useState } from 'react'
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 
+import {
+  AccessibilityIcon,
+  ZoomInIcon,
+  ZoomOutIcon,
+  GrayScaleIcon,
+  HighContrastIcon,
+  NegativeContrastIcon,
+  LinkIcon,
+  FontIcon,
+  ResetIcon,
+  SiteMapIcon,
+  FeedbackIcon,
+  BellIcon,
+} from '../icons'
 import BannerOne from '../../img/dfcchome.jpg'
 import BannerTwo from '../../img/Banner-2.jpg'
 import BannerThree from '../../img/Banner-3.jpg'
@@ -22,6 +36,8 @@ import './Slider.css'
 
 const Slider = () => {
   const [isDrop, setDrop] = useState(false)
+  const [isAccessibility, setAccessibility] = useState(false)
+  const [isNotification, setNotification] = useState(true)
   return (
     <section className="slider-container">
       <Container>
@@ -61,9 +77,124 @@ const Slider = () => {
                     </Nav.Item>
                   </Nav>
                 </div>
-                <div className="right-section">
-                  <h3>right</h3>
+                <div className="slider-nav-right-section">
+                  <button
+                    className="notification-btn"
+                    onClick={() => {
+                      setNotification(!isNotification)
+                    }}
+                  >
+                    <BellIcon />
+                    {isNotification && <span></span>}
+                  </button>
+                  {!isNotification && (
+                    <section className="notifications-panel-container">
+                      <div className="notifications-panel-inner-container">
+                        <article className="notification-container container-one">
+                          <div className="notification-content">
+                            <p>Open Account Online</p>
+                            <span>
+                              Redefining convenience in opening a Bank account
+                              online
+                            </span>
+                            <button className="notification-apply-btn">
+                              Apply Now
+                            </button>
+                          </div>
+                        </article>
+                        <article className="notification-container container-two">
+                          <div className="notification-content">
+                            <p>Open Account Online</p>
+                            <span>
+                              Redefining convenience in opening a Bank account
+                              online
+                            </span>
+                            <button className="notification-apply-btn">
+                              Apply Now
+                            </button>
+                          </div>
+                        </article>
+                        <article className="notification-container container-three">
+                          <div className="notification-content">
+                            <p>Open Account Online</p>
+                            <span>
+                              Redefining convenience in opening a Bank account
+                              online
+                            </span>
+                            <button className="notification-apply-btn">
+                              Apply Now
+                            </button>
+                          </div>
+                        </article>
+                      </div>
+                      <span className="notification-arrow"></span>
+                    </section>
+                  )}
                 </div>
+
+                <section
+                  className={
+                    isAccessibility
+                      ? 'accessibility-section accessibility-section-show'
+                      : 'accessibility-section'
+                  }
+                >
+                  <div className="accessibility-text-container">
+                    <p>Accessibility Tools</p>
+                    <ul>
+                      <li>
+                        <ZoomInIcon />
+                        Increase text
+                      </li>
+                      <li>
+                        <ZoomOutIcon />
+                        decrease text
+                      </li>
+                      <li>
+                        <GrayScaleIcon />
+                        grayscale
+                      </li>
+                      <li>
+                        <HighContrastIcon />
+                        high contrast
+                      </li>
+                      <li>
+                        <NegativeContrastIcon />
+                        negative contrast
+                      </li>
+                      <li>
+                        <LinkIcon />
+                        links underline
+                      </li>
+                      <li>
+                        <FontIcon />
+                        readable font
+                      </li>
+                      <li>
+                        <ResetIcon />
+                        reset
+                      </li>
+                      <hr />
+                      <li>
+                        <SiteMapIcon />
+                        sitemap
+                      </li>
+                      <li>
+                        <FeedbackIcon />
+                        feedback
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    className="accessibility-btn"
+                    onClick={() => {
+                      setAccessibility(!isAccessibility)
+                    }}
+                  >
+                    <AccessibilityIcon />
+                  </button>
+                </section>
               </header>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
@@ -75,13 +206,13 @@ const Slider = () => {
                           I want to
                           <span>know about</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -100,117 +231,6 @@ const Slider = () => {
                           )}
                         </div>
                       </articles>
-                      <div className="left-link-container">
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Facebook} alt="" />
-                          </motion.div>
-                          <span>Facebook</span>
-                        </motion.button>
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Twitter} alt="" />
-                          </motion.div>
-                          <span>Twitter</span>
-                        </motion.button>
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Linkedin} alt="" />
-                          </motion.div>
-                          <span>Linkedin</span>
-                        </motion.button>
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Youtube} alt="" />
-                          </motion.div>
-                          <span>Youtube</span>
-                        </motion.button>
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Insta} alt="" />
-                          </motion.div>
-                          <span>Instagram</span>
-                        </motion.button>
-                        <motion.button
-                          className="social-link"
-                          whileHover={{
-                            x: -65,
-                            transition: { type: 'spring', stiffness: 90 },
-                          }}
-                        >
-                          <motion.div
-                            className="social-btn-image"
-                            whileHover={{
-                              rotate: 360,
-                              transition: { stiffness: 10 },
-                            }}
-                          >
-                            <img src={Whatsapp} alt="" />
-                          </motion.div>
-
-                          <span>Whatsapp</span>
-                        </motion.button>
-                      </div>
                     </div>
                   </Row>
                 </Tab.Pane>
@@ -223,13 +243,13 @@ const Slider = () => {
                           I Want to
                           <span>Choose</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -259,13 +279,13 @@ const Slider = () => {
                           I Want to
                           <span>learn about</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -293,13 +313,13 @@ const Slider = () => {
                           Banking
                           <span>on the go</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -328,13 +348,13 @@ const Slider = () => {
                           Help my business
                           <span>thrive with</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -360,13 +380,13 @@ const Slider = () => {
                       <img src={BannerSix} alt="" />
                       <articles className="banner-text-container">
                         <div className="text-container">Help me grow</div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -394,13 +414,13 @@ const Slider = () => {
                           Make mu business
                           <span>go global</span>
                         </div>
-                        <div
-                          className="banner-dropdown-container"
-                          onClick={() => {
-                            setDrop(!isDrop)
-                          }}
-                        >
-                          <button className="banner-btn">
+                        <div className="banner-dropdown-container">
+                          <button
+                            className="banner-btn"
+                            onClick={() => {
+                              setDrop(!isDrop)
+                            }}
+                          >
                             Choose a topic
                             <div className="btn-image">
                               <img src={Hamberger} alt="" />
@@ -421,6 +441,117 @@ const Slider = () => {
                     </div>
                   </Row>
                 </Tab.Pane>
+                <div className="left-link-container">
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Facebook} alt="" />
+                    </motion.div>
+                    <span>Facebook</span>
+                  </motion.button>
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Twitter} alt="" />
+                    </motion.div>
+                    <span>Twitter</span>
+                  </motion.button>
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Linkedin} alt="" />
+                    </motion.div>
+                    <span>Linkedin</span>
+                  </motion.button>
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Youtube} alt="" />
+                    </motion.div>
+                    <span>Youtube</span>
+                  </motion.button>
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Insta} alt="" />
+                    </motion.div>
+                    <span>Instagram</span>
+                  </motion.button>
+                  <motion.button
+                    className="social-link"
+                    whileHover={{
+                      x: -80,
+                      transition: { type: 'spring', stiffness: 30 },
+                    }}
+                  >
+                    <motion.div
+                      className="social-btn-image"
+                      whileHover={{
+                        rotate: 360,
+                        transition: { stiffness: 10 },
+                      }}
+                    >
+                      <img src={Whatsapp} alt="" />
+                    </motion.div>
+
+                    <span>Whatsapp</span>
+                  </motion.button>
+                </div>
               </Tab.Content>
             </Tab.Container>
           </Col>

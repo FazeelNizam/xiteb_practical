@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Header from './components/Header/Header'
 import Slider from './components/Slider/Slider'
-import Navigation from './components/Navigation/Navigation'
+import NavigationBar from './components/NavigationBar/NavigationBar'
 import Welcome from './components/Welcome/Welcome'
 import Solutions from './components/Solutions/Solutions'
 import Map from './components/Map/Map'
@@ -18,7 +18,7 @@ function App() {
       <div className="App">
         <Header />
         <Slider />
-        <Navigation />
+        <NavigationBar />
         <Welcome />
         <Solutions />
         <Map />

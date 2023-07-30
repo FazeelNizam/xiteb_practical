@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Dropdown from 'react-bootstrap/Dropdown'
+import Collapse from 'react-bootstrap/Collapse'
 
 import { BsChevronRight } from 'react-icons/bs'
 
@@ -18,6 +19,7 @@ const Header = () => {
   const [isTopMenu, setTopMenu] = useState(false)
   const [isBottomMenu, setBottomMenu] = useState(false)
   const [isMenu, setMenu] = useState(false)
+  const [isActive, setActive] = useState('Eng')
 
   const setToggle = () => {
     setMenu(!isMenu)
@@ -188,9 +190,45 @@ const Header = () => {
         <section className="right-section">
           <div className="language-selection">
             <ul>
-              <li>E</li>
-              <li>සි</li>
-              <li>த</li>
+              <li>
+                <a
+                  href="#Eng"
+                  onClick={() => {
+                    setActive('Eng')
+                  }}
+                  className={
+                    isActive === 'Eng' ? 'selected-lang lang-btn' : 'lang-btn'
+                  }
+                >
+                  E
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#සි"
+                  onClick={() => {
+                    setActive('සි')
+                  }}
+                  className={
+                    isActive === 'සි' ? 'lang-btn selected-lang' : 'lang-btn'
+                  }
+                >
+                  සි
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#த"
+                  onClick={() => {
+                    setActive('த')
+                  }}
+                  className={
+                    isActive === 'த' ? 'lang-btn selected-lang' : 'lang-btn'
+                  }
+                >
+                  த
+                </a>
+              </li>
             </ul>
           </div>
           <div className="search-icon">
@@ -221,7 +259,7 @@ const Header = () => {
                     <div className="sub-menu-items">
                       <div className="sub-menu-heading">Personal Banking</div>
                       <div className="sub-menu-link1">
-                        <div className="image-container">
+                        <div className="loginmenu-image-container">
                           <img
                             src="https://www.dfcc.lk/wp-content/uploads/2021/05/wallet.png"
                             alt=""
@@ -235,7 +273,7 @@ const Header = () => {
                           setTopMenu(!isTopMenu)
                         }}
                       >
-                        <div className="image-container">
+                        <div className="loginmenu-image-container">
                           <img
                             src="https://www.dfcc.lk/wp-content/uploads/2021/05/wallet.png"
                             alt=""
@@ -243,25 +281,31 @@ const Header = () => {
                         </div>
                         <p>Download DFCC Wallet</p>
                       </div>
-                      {isTopMenu && (
-                        <div className="download-links">
+                      <Collapse in={isTopMenu}>
+                        <div
+                          className="download-link-container"
+                          id="collapseID"
+                        >
                           <img
+                            className="download-links"
                             src="https://www.dfcc.lk/wp-content/themes/dfccbank/assets/images/ib/playstore.png"
                             alt=""
                           />
                           <img
+                            className="download-links"
                             src="https://www.dfcc.lk/wp-content/themes/dfccbank/assets/images/ib/appstore.png"
                             alt=""
                           />
                           <img
+                            className="download-links"
                             src="https://www.dfcc.lk/wp-content/themes/dfccbank/assets/images/ib/appgallery.png"
                             alt=""
                           />
                         </div>
-                      )}
+                      </Collapse>
                       <div className="sub-menu-heading">Corporate Banking</div>
                       <div className="sub-menu-link1">
-                        <div className="image-container">
+                        <div className="loginmenu-image-container">
                           <img
                             src="https://www.dfcc.lk/wp-content/uploads/2021/05/wallet.png"
                             alt=""
@@ -275,7 +319,7 @@ const Header = () => {
                           setBottomMenu(!isBottomMenu)
                         }}
                       >
-                        <div className="image-container">
+                        <div className="loginmenu-image-container">
                           <img
                             src="https://www.dfcc.lk/wp-content/uploads/2021/05/wallet.png"
                             alt=""
@@ -283,18 +327,23 @@ const Header = () => {
                         </div>
                         <p>Download DFCC iConnect App</p>
                       </div>
-                      {isBottomMenu && (
-                        <div className="download-links">
+                      <Collapse in={isBottomMenu}>
+                        <div
+                          className="download-link-container"
+                          id="collapseID"
+                        >
                           <img
+                            className="download-links"
                             src="https://www.dfcc.lk/wp-content/themes/dfccbank/assets/images/ib/playstore.png"
                             alt=""
                           />
                           <img
+                            className="download-links"
                             src="https://www.dfcc.lk/wp-content/themes/dfccbank/assets/images/ib/appstore.png"
                             alt=""
                           />
                         </div>
-                      )}
+                      </Collapse>
                     </div>
                   </div>
                 </div>

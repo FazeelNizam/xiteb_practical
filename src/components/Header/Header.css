@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   text-transform: capitalize;
-  height: 3.9rem;
+  height: 55px;
   width: 100%;
 }
 
@@ -23,7 +23,7 @@
 
 .btn-drop {
   position: relative;
-  padding: 0.7rem 0.4rem;
+  padding: 0.4rem 0.4rem;
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -40,8 +40,8 @@
   background-color: #e61b23;
   width: 0%;
   content: '';
-  height: 2px;
-  transition: all 0.5s;
+  height: 1.5px;
+  transition: all 0.4s;
 }
 
 .btn-drop:hover::after {
@@ -117,20 +117,31 @@
 .language-selection li {
   list-style: none;
   display: inline-flex;
+}
+
+.lang-btn {
+  display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   margin: 0 0.5rem;
   width: 1.7rem;
   height: 1.7rem;
   border-radius: 50%;
-  border: 1px solid #c0c2c4;
-  color: #c0c2c4;
+  border: 1px solid #b7b8ba;
+  color: #b7b8ba;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.15s ease-in-out;
 }
 
-.language-selection li:hover {
+.lang-btn:hover {
+  background-color: #e61b23;
+  color: #ffff;
+  border: 1px solid #ffff;
+}
+
+.selected-lang {
   background-color: #e61b23;
   color: #ffff;
   border: 1px solid #ffff;
@@ -140,8 +151,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.9rem;
-  height: 3.9rem;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
 }
 
@@ -149,7 +160,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 3.9rem;
+  height: 55px;
 }
 
 .btn-gray {
@@ -163,9 +174,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 3.9rem;
+  height: 55px;
   border: none;
-  padding: 0 0.2rem;
+  padding: 0 0.4rem;
   background-color: #8a8c8e;
   font-family: 'Montserrat', sans-serif;
   font-size: 10px;
@@ -183,12 +194,12 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  height: 3.9rem;
+  height: 55px;
   border: none;
   border-radius: 0;
   background-color: #e61b23;
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
+  font-size: 12.3px;
   color: #ffff;
   cursor: pointer;
 }
@@ -198,7 +209,7 @@
 }
 
 .login-btn .lock {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .login-btn .arrow {
@@ -211,7 +222,7 @@
   height: auto;
   right: 0;
   border-radius: 5px;
-  background-color: #2d373e;
+  background-color: #12171bd3;
   text-transform: none;
 }
 
@@ -256,7 +267,7 @@
   transition: all 0.2s ease-in-out;
 }
 
-.sub-menu-items .image-container {
+.sub-menu-items .loginmenu-image-container {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -267,7 +278,7 @@
   align-items: center;
 }
 
-.sub-menu-items .image-container img {
+.sub-menu-items .loginmenu-image-container img {
   width: 0.85rem;
   height: 0.85rem;
   margin: auto;
@@ -279,33 +290,13 @@
   padding: 0;
 }
 
-.download-links {
-  display: flex;
-  align-items: center;
-  height: auto;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 0 10px 15px 50px;
-  animation: fade 0.5s linear forwards;
+.download-link-container {
+  padding-left: 50px;
 }
 
-.download-links img {
+.download-links {
   width: 100px;
+  margin: 0 10px 10px 0;
   filter: invert(1);
   cursor: pointer;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    height: 0;
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    height: 100%;
-  }
 }
