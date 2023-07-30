@@ -1,0 +1,86 @@
+.rates-section {
+  width: 100vw;
+  height: auto;
+  padding: 50px;
+}
+
+.rates-section .mySwiper {
+  max-width: 1032px;
+}
+
+.rates-section .swiper-slide {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 50px) / 4);
+  height: 60px;
+}
+
+.rate-slide-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.flag-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #9c9c9c;
+  padding-right: 14px;
+  padding-top: 5px;
+  margin-right: 6px;
+}
+
+.flag-container img {
+  width: 32px;
+}
+
+.flag-container p {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+.buy-sell-rate-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-sell-rate-container p {
+  padding: 0;
+  margin: 0;
+  color: #9b9b9b;
+}
+
+.rate-link {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 13px;
+}
+
+.rate-link span {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  color: #b5b5b5;
+}
+
+.rate-link p {
+  font-size: 9px;
+  margin: 0 4px;
+}
+
+.rate-link a {
+  margin-left: 15px;
+  color: black;
+}
+
+@media screen and (max-width: 769px) {
+  .rates-section .swiper-slide {
+    width: 100% !important;
+    height: 60px;
+  }
+}

@@ -26,19 +26,13 @@ const NavigationBar = () => {
             800: {
               slidesPerView: 3,
             },
-            950: {
-              slidesPerView: 4,
+            1400: {
+              slidesPerView: 5,
             },
           }}
           modules={[Navigation]}
-          className="mySwiper"
+          className="navigationSwiper"
         >
-          {/* <SwiperSlide>
-            <div className="slide-container">
-              <img src={Lock} alt="" />
-              <span>Online Banking</span>
-            </div>
-          </SwiperSlide> */}
           {slideData.map((slide, index) => {
             return (
               <SwiperSlide>
