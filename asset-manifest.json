@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/xiteb_practical/static/css/main.6541fa1e.css",
-    "main.js": "/xiteb_practical/static/js/main.cc3b314f.js",
+    "main.css": "/xiteb_practical/static/css/main.e1c38ba9.css",
+    "main.js": "/xiteb_practical/static/js/main.c2a4638f.js",
     "static/media/notification-1.jpg": "/xiteb_practical/static/media/notification-1.4232e9ccace7ae579227.jpg",
     "static/media/Banner-4.jpg": "/xiteb_practical/static/media/Banner-4.8aaef2fe5ba3b39798d6.jpg",
     "static/media/Banner-6.jpg": "/xiteb_practical/static/media/Banner-6.e60a2e899e3a0a31a45e.jpg",
@@ -14,11 +14,13 @@
     "static/media/Banner-5.jpg": "/xiteb_practical/static/media/Banner-5.2e2bdf1f2e67a851078e.jpg",
     "static/media/notification-3.jpg": "/xiteb_practical/static/media/notification-3.41854f76e004de5cd5cb.jpg",
     "static/media/instagram.png": "/xiteb_practical/static/media/instagram.1792ff30fb032c94685c.png",
+    "static/media/insta-white.png": "/xiteb_practical/static/media/insta-white.475b86e70d4682f6ced3.png",
     "static/media/Banner-2.jpg": "/xiteb_practical/static/media/Banner-2.74f70c8813c2f626cb7d.jpg",
     "static/media/solutionimg-4.jpg": "/xiteb_practical/static/media/solutionimg-4.44482caa2c4a9b20243e.jpg",
     "static/media/announcementimg-2.jpg": "/xiteb_practical/static/media/announcementimg-2.0ff7ffc06141f465c0cb.jpg",
     "static/media/announcementimg-3.jpg": "/xiteb_practical/static/media/announcementimg-3.1d3dfb51a1d6e59c5dc6.jpg",
     "static/media/announcementimg-1.jpg": "/xiteb_practical/static/media/announcementimg-1.2913be01bf3a0737d761.jpg",
+    "static/media/linkedin-white.png": "/xiteb_practical/static/media/linkedin-white.367e73f523d32c24d9df.png",
     "static/media/twitter.png": "/xiteb_practical/static/media/twitter.93ac3f9a344ecd5d01a4.png",
     "static/media/whatsapp.png": "/xiteb_practical/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
     "static/media/solutionimg-5.jpg": "/xiteb_practical/static/media/solutionimg-5.b7dd281bf2e68b3fead7.jpg",
@@ -31,11 +33,11 @@
     "static/media/solutionimg-6.jpg": "/xiteb_practical/static/media/solutionimg-6.cfce985785849697a013.jpg",
     "static/media/hamburger-menu.svg": "/xiteb_practical/static/media/hamburger-menu.71a792a5a57d9e44b4690cf5f758700b.svg",
     "index.html": "/xiteb_practical/index.html",
-    "main.6541fa1e.css.map": "/xiteb_practical/static/css/main.6541fa1e.css.map",
-    "main.cc3b314f.js.map": "/xiteb_practical/static/js/main.cc3b314f.js.map"
+    "main.e1c38ba9.css.map": "/xiteb_practical/static/css/main.e1c38ba9.css.map",
+    "main.c2a4638f.js.map": "/xiteb_practical/static/js/main.c2a4638f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6541fa1e.css",
-    "static/js/main.cc3b314f.js"
+    "static/css/main.e1c38ba9.css",
+    "static/js/main.c2a4638f.js"
   ]
 }
