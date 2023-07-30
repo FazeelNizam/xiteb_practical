@@ -17,7 +17,7 @@
 
 .navigationSwiper .swiper-wrapper {
   display: flex;
-  max-width: 90%;
+  max-width: 100% !important;
 }
 
 .navigationSwiper .swiper-slide {
