@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/xiteb_practical/static/css/main.9bf95c86.css",
-    "main.js": "/xiteb_practical/static/js/main.a48423bd.js",
+    "main.css": "/xiteb_practical/static/css/main.e13e4033.css",
+    "main.js": "/xiteb_practical/static/js/main.f29159b4.js",
+    "static/media/notification-1.jpg": "/xiteb_practical/static/media/notification-1.4232e9ccace7ae579227.jpg",
     "static/media/Banner-4.jpg": "/xiteb_practical/static/media/Banner-4.8aaef2fe5ba3b39798d6.jpg",
     "static/media/Banner-6.jpg": "/xiteb_practical/static/media/Banner-6.e60a2e899e3a0a31a45e.jpg",
     "static/media/Banner-7.jpg": "/xiteb_practical/static/media/Banner-7.d0e4ac4fdded61bbf9ee.jpg",
     "static/media/dfcchome.jpg": "/xiteb_practical/static/media/dfcchome.9395f3a3d1e4a05ad63a.jpg",
     "static/media/Banner-3.jpg": "/xiteb_practical/static/media/Banner-3.4d3fcede6857f278d708.jpg",
+    "static/media/notification-2.jpg": "/xiteb_practical/static/media/notification-2.0132e120ff11759f6fa4.jpg",
+    "static/media/welcome-image.jpg": "/xiteb_practical/static/media/welcome-image.e70c2064010b98f964af.jpg",
     "static/media/Banner-5.jpg": "/xiteb_practical/static/media/Banner-5.2e2bdf1f2e67a851078e.jpg",
+    "static/media/notification-3.jpg": "/xiteb_practical/static/media/notification-3.41854f76e004de5cd5cb.jpg",
     "static/media/instagram.png": "/xiteb_practical/static/media/instagram.1792ff30fb032c94685c.png",
     "static/media/Banner-2.jpg": "/xiteb_practical/static/media/Banner-2.74f70c8813c2f626cb7d.jpg",
     "static/media/twitter.png": "/xiteb_practical/static/media/twitter.93ac3f9a344ecd5d01a4.png",
@@ -18,11 +22,11 @@
     "static/media/dfcclogo.svg": "/xiteb_practical/static/media/dfcclogo.8dc5934fe539742c957edbecbf0812e6.svg",
     "static/media/hamburger-menu.svg": "/xiteb_practical/static/media/hamburger-menu.71a792a5a57d9e44b4690cf5f758700b.svg",
     "index.html": "/xiteb_practical/index.html",
-    "main.9bf95c86.css.map": "/xiteb_practical/static/css/main.9bf95c86.css.map",
-    "main.a48423bd.js.map": "/xiteb_practical/static/js/main.a48423bd.js.map"
+    "main.e13e4033.css.map": "/xiteb_practical/static/css/main.e13e4033.css.map",
+    "main.f29159b4.js.map": "/xiteb_practical/static/js/main.f29159b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bf95c86.css",
-    "static/js/main.a48423bd.js"
+    "static/css/main.e13e4033.css",
+    "static/js/main.f29159b4.js"
   ]
 }
