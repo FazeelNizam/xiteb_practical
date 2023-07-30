@@ -1,11 +1,19 @@
 import React from 'react'
+
+import cardData from './cardData'
+import SolutionCard from './SolutionCard'
+
 import './Solutions.css'
 
 const Solutions = () => {
   return (
-    <div>
-      <h1>Solutions</h1>
-    </div>
+    <section className="solution-container">
+      <div className="solution-cards-container">
+        {cardData.map((card, index) => {
+          return <SolutionCard key={index} {...card} />
+        })}
+      </div>
+    </section>
   )
 }
 

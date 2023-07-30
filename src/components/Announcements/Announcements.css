@@ -1,0 +1,129 @@
+.announcement-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: #ebebeb;
+}
+
+.announcement-container p {
+  font-size: 28px;
+  color: #0063c7;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.announcement-cards-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+  flex-wrap: wrap;
+}
+
+.announcement-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 531px;
+  width: calc((100% - 30px) / 3);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.announcement-card .title-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 155px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-left: 10px;
+}
+
+.announcement-card .image-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-height: 250px;
+}
+
+.announcement-card .image-container img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.announcement-card .image-container span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00060c4e;
+  border-bottom: 8px solid #01498f;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.announcement-card .title-container p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.announcement-card .title-container .announcement-btn {
+  padding: 6px 0;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: #01498f;
+  background: transparent;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.announcement-card:hover > p {
+  color: #01498f;
+}
+
+.announcement-card:hover > .image-container span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .announcement-card {
+    max-width: 531px;
+    width: calc((100% - 30px) / 2);
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .announcement-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .announcement-card {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .announcement-card .title-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .announcement-card .title-container p {
+    text-align: center;
+  }
+}

@@ -64,8 +64,8 @@
   filter: brightness(0) invert(1);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .swiper-slide {
-    max-width: 130px !important;
+    max-width: 140px !important;
   }
 }
