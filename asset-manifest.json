@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/xiteb_practical/static/css/main.1ae5f4c9.css",
-    "main.js": "/xiteb_practical/static/js/main.23e3cbbf.js",
+    "main.css": "/xiteb_practical/static/css/main.6541fa1e.css",
+    "main.js": "/xiteb_practical/static/js/main.cc3b314f.js",
     "static/media/notification-1.jpg": "/xiteb_practical/static/media/notification-1.4232e9ccace7ae579227.jpg",
     "static/media/Banner-4.jpg": "/xiteb_practical/static/media/Banner-4.8aaef2fe5ba3b39798d6.jpg",
     "static/media/Banner-6.jpg": "/xiteb_practical/static/media/Banner-6.e60a2e899e3a0a31a45e.jpg",
@@ -31,11 +31,11 @@
     "static/media/solutionimg-6.jpg": "/xiteb_practical/static/media/solutionimg-6.cfce985785849697a013.jpg",
     "static/media/hamburger-menu.svg": "/xiteb_practical/static/media/hamburger-menu.71a792a5a57d9e44b4690cf5f758700b.svg",
     "index.html": "/xiteb_practical/index.html",
-    "main.1ae5f4c9.css.map": "/xiteb_practical/static/css/main.1ae5f4c9.css.map",
-    "main.23e3cbbf.js.map": "/xiteb_practical/static/js/main.23e3cbbf.js.map"
+    "main.6541fa1e.css.map": "/xiteb_practical/static/css/main.6541fa1e.css.map",
+    "main.cc3b314f.js.map": "/xiteb_practical/static/js/main.cc3b314f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ae5f4c9.css",
-    "static/js/main.23e3cbbf.js"
+    "static/css/main.6541fa1e.css",
+    "static/js/main.cc3b314f.js"
   ]
 }
